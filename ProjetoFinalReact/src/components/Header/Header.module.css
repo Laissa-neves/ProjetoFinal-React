@@ -1,0 +1,19 @@
+header {
+    background-color: #107552c4;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 1px 6px 10px #0A6847;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    height: 100px;
+    color: #E9982D;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+}
