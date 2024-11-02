@@ -6,7 +6,7 @@ import Modify from '../pages/Modify'
 import Search from '../pages/Search'
 import Error from '../pages/Error'
 
-export default function AppRoute() {
+export default function AppRoutes() {
   return (
     <Routes>
         <Route path='/' element={<Home/>}> </Route>

@@ -3,21 +3,15 @@ footer {
     color: #E9982D;
     padding: 20px;
     text-align: center;
-    margin-top: 665px;
-    
-    
+    margin-top: 580px;
 }
-
 
 span {
     font-size: 1.3rem;
 }
 
 #root{
-    
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
-
-
 }
