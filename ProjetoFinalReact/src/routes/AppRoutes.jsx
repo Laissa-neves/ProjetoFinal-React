@@ -12,7 +12,7 @@ export default function AppRoutes() {
         <Route path='/' element={<Home/>}> </Route>
         <Route path='/adicionar' element={<Add/>}> </Route>
         <Route path='/modificar' element={<Modify/>}> </Route>
-        <Route path='/buscar' element={<Search/>}> </Route>
+        <Route path='/buscar' element={<Search />}> </Route>
         <Route path='*' element={<Error/>}> </Route>
     </Routes>
   )
