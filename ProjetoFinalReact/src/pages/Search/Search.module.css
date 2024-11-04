@@ -1,0 +1,15 @@
+ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  list-style-type: none;
+  background-color: #107552c4;
+}
+
+li {
+  width: 300px;
+  background-color: #F6E9B2;
+  margin: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
