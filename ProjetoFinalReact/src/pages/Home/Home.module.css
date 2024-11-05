@@ -59,7 +59,14 @@
 .text {
   margin-top: 100px;
   margin-bottom: 50px;
-  font-size: 29px;
+  font-size: 34px;
+  text-align: center;
+}
+
+.textAdd{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 49px;
   text-align: center;
 }
 
