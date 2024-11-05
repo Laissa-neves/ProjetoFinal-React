@@ -1,0 +1,11 @@
+
+.errorTitle {
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #e74c3c;
+    margin: 100px 0;
+    
+}
