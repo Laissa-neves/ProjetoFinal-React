@@ -19,9 +19,28 @@ main{
     align-items: center;
     justify-content: center;
     height: 100%;
-    gap: 40px;
+    gap: 32px;
     transform: scale(1.4);
 }
+
+@media (min-width: 790px){
+    .content{
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 790px){
+    .content{
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 560px){
+    .content{
+        transform: scale(1.1);
+    }
+}
+
 
 .content h2{
     font-size: 50px;

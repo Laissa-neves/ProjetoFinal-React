@@ -122,22 +122,17 @@ export default function Home() {
             Bem-vindo ao nosso supermercado vegano! Explore o site e descubra
             como é fácil gerenciar nossos produtos e acompanhar novidades
             exclusivas. Utilize os botões abaixo para acessar as principais
-            funcionalidades: adicione novos itens ao nosso catálogo, atualize
-            informações de produtos já existentes ou faça uma busca para
+            funcionalidades: adicione novos itens ao nosso catálogo ou faça uma busca para
             encontrar rapidamente aquilo que você precisa.
           </h3>
 
-          <div className={styles.btnRoutes}>
+          <div className={styles.btnRoutesHome}>
             <Link to="/buscar">
               <button>Buscar</button>
             </Link>
 
             <Link to="/adicionar">
               <button>Adicionar</button>
-            </Link>
-
-            <Link to="/modificar">
-              <button>Atualizar</button>
             </Link>
           </div>
         </div>
