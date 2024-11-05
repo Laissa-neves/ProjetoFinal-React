@@ -1,45 +1,43 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #F6E9B2;
-    font-family: 'Coolvetica Condensed';
+body {
+  background-color: #f6e9b2;
+  font-family: "Coolvetica Condensed";
 }
 
-#root{
-    min-height: 100vh;
+#root {
+  min-height: 100vh;
 }
 
 /* fonte do titulo */
 @font-face {
-    font-family: 'Coolvetica Condensed';
-    src: url('../fonts/coolvetica condensed rg.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Coolvetica Condensed";
+  src: url("../fonts/coolvetica condensed rg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* fonte mais fininha  */
 @font-face {
-    font-family: 'Coolvetica Crammed';
-    src: url('../fonts/coolvetica crammed rg.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Coolvetica Crammed";
+  src: url("../fonts/coolvetica crammed rg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .Busca {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    width: 60%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Coolvetica Condensed', sans-serif;
-    font-size: 30px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Coolvetica Condensed", sans-serif;
+  font-size: 30px;
+}
