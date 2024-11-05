@@ -20,7 +20,6 @@ const validationProduct = yup.object().shape({
 });
 
 export default function Modify() {
-  const [produto, setProduto] = useState();
   const { id } = useParams();
   let navigate = useNavigate();
 
@@ -36,7 +35,6 @@ export default function Modify() {
       .get(`https://6722c0692108960b9cc578da.mockapi.io/produtos/${id}`)
       .then((response) => {
         reset(response.data);
-        setProduto(response.da)
       });
   }, []);
 
@@ -55,7 +53,7 @@ export default function Modify() {
       .delete(`https://6722c0692108960b9cc578da.mockapi.io/produtos/${id}`)
       .then(() => {
         console.log("Produto Deletado!");
-        navigate("/buscar")
+        navigate("/buscar");
       })
       .catch(() => console.log("Erro na requisição"));
   };
@@ -134,9 +132,7 @@ export default function Modify() {
               <Link to="/buscar">
                 <button className={styles.btnHome}>Voltar</button>
               </Link>
-              <button onClick={() => deletar(id)}>
-                Deletar Produto
-              </button>
+              <button onClick={() => deletar(id)}>Deletar Produto</button>
             </div>
           </div>
         </div>
