@@ -51,7 +51,8 @@ export default function Search() {
           type="text"
           value={busca}
           onChange={handleInputChange}
-          placeholder="Digite o nome do produto" className={styles.search}
+          placeholder="Digite o nome do produto"
+          className={styles.search}
         />
         <ul className="listaProduto">
           {produtosFiltrados.map((produto) => (
@@ -64,6 +65,11 @@ export default function Search() {
               <br />
               R$: {produto.preco}
               <br />
+              <div className={styles.btnRoutes}>
+                <Link to={`/modificar/${produto.id}`}>
+                  <button>Atualizar</button>
+                </Link>
+              </div>
             </li>
           ))}
         </ul>
