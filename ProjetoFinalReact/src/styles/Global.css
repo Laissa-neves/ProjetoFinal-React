@@ -2,24 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    
 }
 
 body{
-    overflow: hidden;
-    height: 100vh;
     background-color: #F6E9B2;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Coolvetica Condensed';
 }
 
 #root{
-    justify-content: space-between;
-    align-items: center;
     min-height: 100vh;
-    
-
-
 }
 
+/* fonte do titulo */
+@font-face {
+    font-family: 'Coolvetica Condensed';
+    src: url('../fonts/coolvetica condensed rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
+/* fonte mais fininha  */
+@font-face {
+    font-family: 'Coolvetica Crammed';
+    src: url('../fonts/coolvetica crammed rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
