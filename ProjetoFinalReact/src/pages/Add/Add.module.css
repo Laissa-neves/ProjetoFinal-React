@@ -61,17 +61,27 @@ main{
 
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
-    
 }
+
 input[type=number] { 
    -moz-appearance: textfield;
    appearance: textfield;
-
 }
 
 .fields input:focus{
     outline-style: none;
     border: 2px solid #7ABA78;
+}
+
+.fields input:hover{
+    outline-style: none;
+    border: 1px solid #7ABA78;
+}
+
+
+.errorMessage{
+    color: rgb(240, 18, 18);
+    padding-top: -4px;
 }
 
 .btnPost{

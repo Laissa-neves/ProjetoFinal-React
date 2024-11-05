@@ -4,29 +4,39 @@ import Header from "../../components/Header";
 import Footer from '../../components/Footer'
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
+const validationPost = yup.object().shape(
+  {
+    nome: yup.string().min(2,"O tamanho min. é 2 caracteres").max(50, "O tamanho máx. é 50 caracteres"),
+    categoria:yup.string().min(4,"O tamanho min. é 4 caracteres").max(50, "O tamanho máx. é 50 caracteres"),
+  }
+)
 
 export default function Add() {
 
-    const form = document.getElementById('formulario')
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }
+  } = useForm({resolver:yupResolver(validationPost)});
 
-    const [values, setValues] = useState({
-        nome: "",
-        categoria: "",
-        quantidade: 0,
-        preco: 0
-    })
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        axios.post('https://6722c0692108960b9cc578da.mockapi.io/produtos', values)
-        .then(res => {
+  const post = (data) => {
+    axios.post('https://6722c0692108960b9cc578da.mockapi.io/produtos', data)
+         .then((res) => {
             console.log(res);
+            reset();
             alert("Produto cadastrado com sucesso!");
         })
-        .catch(erro => console.log(erro));
-        alert("Erro ao cadastrar produto");
-        form.reset();
-    }
+        .catch((erro) => {
+          console.log(erro);
+          alert("Erro ao cadastrar produto");
+          })
+            
+  };
 
   return (
     <div className={styles.general}>
@@ -36,22 +46,26 @@ export default function Add() {
           <h2>Cadastrar produto</h2>
           
           <div className={styles.cardBodyPost}>
-            <form id="formulario" onSubmit={handleSubmit}>
+            <form id="formulario" onSubmit={handleSubmit(post)}>
               
               <div className={styles.fields}>
-                <input placeholder="Nome" required type="text" name="nome" id="nome" onChange={(e) => setValues({...values, nome: e.target.value})}/>
+                <input placeholder="Nome" required type="text" name="nome" id="nome" {...register("nome")}/>
+                <p className={styles.errorMessage}>{errors.nome?.message}</p>
               </div>
 
               <div className={styles.fields}>
-                <input placeholder="Categoria" required type="text" name="categoria" id="categoria" onChange={(e) => setValues({...values, categoria: e.target.value})} />
+                <input placeholder="Categoria" required type="text" name="categoria" id="categoria" {...register("categoria")} />
+                <p className={styles.errorMessage}>{errors.categoria?.message}</p>
               </div>
 
               <div className={styles.fields}>
-                <input placeholder="Quantidade" required type="number" name="quantidade" id="quantidade" onChange={(e) => setValues({...values, quantidade: e.target.value})}></input>
+                <input placeholder="Quantidade" required type="number" name="quantidade" id="quantidade" {...register("quantidade")}></input>
+                <p className={styles.errorMessage}>{errors.quantidade?.message}</p>
               </div>
 
               <div className={styles.fields}>
-                <input placeholder="Preço unitário" required type="number" name="preco" id="preco" onChange={(e) => setValues({...values, preco: e.target.value})}></input>
+                <input placeholder="Preço unitário" required name="preco" id="preco" {...register("preco")}></input>
+                <p className={styles.errorMessage}>{errors.preco?.message}</p>
               </div>
 
               <div className={styles.btnPost}>

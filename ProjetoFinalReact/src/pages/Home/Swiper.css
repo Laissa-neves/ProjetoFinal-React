@@ -1,0 +1,28 @@
+.swiper-button-next {
+  color: #107552c4 !important;
+  transition: 0.3s;
+}
+
+.swiper-button-prev {
+  color: #107552c4 !important;
+  transition: 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  text-shadow: 0px 0px 9px !important;
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+.swiper-pagination {
+  bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+  background: #107552c4 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #107552c4 !important;
+}
