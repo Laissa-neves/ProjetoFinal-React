@@ -28,9 +28,10 @@
   text-align: center;
 }
 
-.btnRoutes button {
+.btnRoutesHome button {
   height: 45px;
   width: 100px;
+  transform: scale(1.2);
   font-size: 16px;
   background-color: #f8c52c;
   border: 1px solid #f1be23;
@@ -38,21 +39,22 @@
   font-family: "Coolvetica Condensed";
   font-size: 24px;
   box-shadow: 1px 3px 10px #dfad1a;
+  /* margin-right: 10px; */
 }
 
-.btnRoutes button:hover {
+.btnRoutesHome button:hover {
   background-color: #e2b631;
   transition: 2ms;
 }
 
-.btnRoutes button:focus {
+.btnRoutesHome button:focus {
   outline-style: none;
   border: 2px solid #dda704;
 }
 
-.btnRoutes {
+.btnRoutesHome {
   display: flex;
-  gap: 20px;
+  gap: 45px;
   justify-content: center;
 }
 

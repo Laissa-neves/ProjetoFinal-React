@@ -39,16 +39,11 @@ export default function Search() {
     <div>
       <Header />
       <div className="Busca">
-        <h2>Produtos em stoque</h2>
+        <h2>Produtos em estoque:</h2>
         <div className={styles.btnsAdd}>
           <div className={styles.btnRoutes}>
             <Link to={"/"}>
-              <button className={styles.btnHome}>Home</button>
-            </Link>
-          </div>
-          <div className={styles.btnRoutes}>
-            <Link to={"/buscar"}>
-              <button>Buscar</button>
+              <button className={styles.btnHm}>Home</button>
             </Link>
           </div>
         </div>
@@ -56,7 +51,7 @@ export default function Search() {
           type="text"
           value={busca}
           onChange={handleInputChange}
-          placeholder="Digite o nome do produto"
+          placeholder="Digite o nome do produto" className={styles.search}
         />
         <ul className="listaProduto">
           {produtosFiltrados.map((produto) => (
