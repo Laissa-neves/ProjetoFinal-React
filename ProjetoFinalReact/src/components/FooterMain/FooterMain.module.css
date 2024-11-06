@@ -5,9 +5,14 @@
     text-align: center;
     bottom: 0;
     width: 100%;
-    margin-top: 50em;
 }
 
 span {
     font-size: 1.3rem;
+}
+
+@media(min-width: 1200px) {
+    .footerMain{
+        margin-top: 55em;
+    }
 }

@@ -6,11 +6,11 @@ export default function FooterSearch() {
 
   useEffect(() => {
     const handleScroll = () => {
-
+      
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        setIsFooterVisible(false);
-      } else {
         setIsFooterVisible(true);
+      } else {
+        setIsFooterVisible(false);
       }
     };
  
