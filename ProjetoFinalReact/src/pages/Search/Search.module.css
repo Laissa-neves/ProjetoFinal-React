@@ -14,12 +14,12 @@ ul {
 li {
   border-radius: 8px;
   width: 300px;
-  background-color: #F6E9B2;
+  background-color: #f6e9b2;
   margin: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.search{
+.search {
   margin-bottom: 30px;
   width: 40%;
   height: 50px;
@@ -28,67 +28,67 @@ li {
   border-radius: 32px;
 }
 
-.btnPost{
+.btnPost {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.btnPost button{
+.btnPost button {
   height: 45px;
   width: 180px;
-  background-color: #7ABA78;
-  font-family: 'Coolvetica Condensed';
+  background-color: #7aba78;
+  font-family: "Coolvetica Condensed";
   font-size: 24px;
   border: none;
   border-radius: 3px;
 }
 
-.btnPost button:focus{
+.btnPost button:focus {
   outline-style: none;
   border: 2px solid #08553a;
 }
 
-.btnPost button:hover{
+.btnPost button:hover {
   background-color: #6cbb69;
   transition: 2ms;
 }
 
-.btnsAdd{
+.btnsAdd {
   display: flex;
 }
 
-.btnHm{
+.btnHm {
   margin-right: 30px;
   margin: 20px;
 }
 
-.btnRoutes button{
+.btnRoutes button {
   height: 45px;
   width: 100px;
   font-size: 16px;
   background-color: #f8c52c;
   border: 1px solid #f1be23;
   border-radius: 4px;
-  font-family: 'Coolvetica Condensed';
+  font-family: "Coolvetica Condensed";
   font-size: 24px;
   box-shadow: 1px 3px 10px #dfad1a;
 }
 
-.btnRoutes button:hover{
+.btnRoutes button:hover {
   background-color: #e2b631;
   transition: 2ms;
 }
 
-.btnRoutes button:focus{
+.btnRoutes button:focus {
   outline-style: none;
   border: 2px solid #dda704;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-.btnAtualizar{
+.btnAtualizar {
   transform: scale(0.8);
 }

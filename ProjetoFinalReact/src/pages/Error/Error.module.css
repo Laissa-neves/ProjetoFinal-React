@@ -1,19 +1,18 @@
 .errorTitle {
-    flex-direction: column;
-    align-items: center;
-    min-height: 300%;
-    text-align: center;
-    font-size: 4rem;
-    color: #f13d3d;
-    margin: 100px 0px 0px 0px;
-    text-shadow: 3px 4px 8px rgba(22, 2, 2, 0.392);
-    
+  flex-direction: column;
+  align-items: center;
+  min-height: 300%;
+  text-align: center;
+  font-size: 4rem;
+  color: #f13d3d;
+  margin: 100px 0px 0px 0px;
+  text-shadow: 3px 4px 8px rgba(22, 2, 2, 0.392);
 }
 
 .abacateImage {
-    width: 45vh; 
-    height: auto; 
-    display: block; 
-    margin: 20px auto; 
-    border-radius: 10px; 
+  width: 45vh;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
 }

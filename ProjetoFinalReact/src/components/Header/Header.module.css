@@ -1,17 +1,17 @@
 header {
-    background-color: #107552c4;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 1px 6px 10px #0A6847;
+  background-color: #107552c4;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 1px 6px 10px #0a6847;
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    color: #E9982D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  color: #e9982d;
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }

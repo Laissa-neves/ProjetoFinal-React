@@ -1,18 +1,61 @@
 .footerMain {
-    background-color: #459068;
-    color: #E9982D;
-    padding: 20px;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
+  background-color: #459068;
+  color: #e9982d;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  margin-top: 45em;
 }
 
 span {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
-@media(min-width: 1200px) {
-    .footerMain{
-        margin-top: 55em;
-    }
+@media (max-width: 660px) {
+  .footerMain {
+    margin-top: 50em;
+  }
+}
+
+@media (max-width: 592px) {
+  .footerMain {
+    margin-top: 65em;
+  }
+}
+
+@media (max-width: 419px) {
+  .footerMain {
+    margin-top: 70em;
+  }
+}
+
+@media (max-width: 373px) {
+  .footerMain {
+    margin-top: 75em;
+  }
+}
+
+@media (max-width: 340px) {
+  .footerMain {
+    margin-top: 80em;
+  }
+}
+
+@media (max-width: 304px) {
+  .footerMain {
+    margin-top: 85em;
+  }
+}
+
+@media (max-width: 266px) {
+  .footerMain {
+    margin-top: 90em;
+  }
+}
+
+@media (max-width: 250px) {
+  .footerMain {
+    margin-top: 100em;
+  }
 }
