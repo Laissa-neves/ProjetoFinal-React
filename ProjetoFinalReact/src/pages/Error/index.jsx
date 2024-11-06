@@ -14,8 +14,6 @@ export default function Error() {
       <img src={abacate} alt="Imagem de abacate" 
       className={styles.abacateImage} />
       <Footer/>
-      
     </div>
-
   );
 }

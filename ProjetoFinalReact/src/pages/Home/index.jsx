@@ -17,7 +17,8 @@ import Cliente from "../../assets/Cliente.webp";
 import Equipe from "../../assets/Equipe.webp";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Footer from "../../components/Footer";
+// import Footer from "../../components/Footer";
+import FooterMain from "../../components/FooterMain";
 import Header from "../../components/Header";
 
 export default function Home() {
@@ -119,7 +120,8 @@ export default function Home() {
           </Swiper>
 
           <h3 className={styles.text}>
-            Bem-vindo ao nosso supermercado vegano! Explore o site e descubra
+            Bem-vindo ao gerenciador de estoque Eco+ ! <br/>
+            Explore o site e descubra
             como é fácil gerenciar nossos produtos e acompanhar novidades
             exclusivas. Utilize os botões abaixo para acessar as principais
             funcionalidades: adicione novos itens ao nosso catálogo ou faça uma busca para
@@ -137,7 +139,8 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
+      <FooterMain/>
     </div>
   );
 }

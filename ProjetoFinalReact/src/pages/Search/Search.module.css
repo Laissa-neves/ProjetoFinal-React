@@ -88,3 +88,7 @@ li {
 button{
   cursor: pointer;
 }
+
+.btnAtualizar{
+  transform: scale(0.8);
+}

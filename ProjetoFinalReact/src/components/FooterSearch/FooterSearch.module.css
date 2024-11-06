@@ -1,4 +1,4 @@
-.footer {
+.footerSearch {
     background-color: #459068;
     color: #E9982D;
     padding: 20px;
@@ -7,8 +7,21 @@
     position: fixed;
     width: 100%;
     z-index: 9999;
+    transition: opacity 0.3s ease; 
 }
 
 span {
     font-size: 1.3rem;
+}
+
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.visible {
+    opacity: 1;
+    visibility: visible;
 }

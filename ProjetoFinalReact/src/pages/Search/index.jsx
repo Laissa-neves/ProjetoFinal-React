@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import * as styles from "./Search.module.css";
 import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import { Link, useNavigate } from "react-router-dom";
+import FooterSearch from "../../components/FooterSearch";
 
 export default function Search() {
   const [nome, setNome] = useState("");
@@ -67,14 +67,14 @@ export default function Search() {
               <br />
               <div className={styles.btnRoutes}>
                 <Link to={`/modificar/${produto.id}`}>
-                  <button>Atualizar</button>
+                  <button className={styles.btnAtualizar}>Atualizar</button>
                 </Link>
               </div>
             </li>
           ))}
         </ul>
       </div>
-      <Footer />
+      <FooterSearch />
     </div>
   );
 }

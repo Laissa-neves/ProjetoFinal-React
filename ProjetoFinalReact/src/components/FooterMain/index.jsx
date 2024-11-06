@@ -1,9 +1,9 @@
 import React from "react";
-import * as styles from "./Footer.module.css";
+import * as styles from "./FooterMain.module.css";
 
-export default function Footer() {
+export default function FooterMain() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footerMain}>
         <div className={styles.menu}>
         <span>Todos os direitos reservados </span> &copy; 2024 {" "}
         </div>
