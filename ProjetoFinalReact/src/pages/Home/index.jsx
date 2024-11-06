@@ -17,7 +17,6 @@ import Cliente from "../../assets/Cliente.webp";
 import Equipe from "../../assets/Equipe.webp";
 import axios from "axios";
 import { Link } from "react-router-dom";
-// import Footer from "../../components/Footer";
 import FooterMain from "../../components/FooterMain";
 import Header from "../../components/Header";
 
@@ -31,7 +30,7 @@ export default function Home() {
       .then((response) => {
         setItem(response.data);
       })
-      .catch(() => console.log("Problemas na requisição"));
+      .catch(() => alert("Problemas na requisição"));
 
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
@@ -120,12 +119,12 @@ export default function Home() {
           </Swiper>
 
           <h3 className={styles.text}>
-            Bem-vindo ao gerenciador de estoque Eco+ ! <br/>
-            Explore o site e descubra
-            como é fácil gerenciar nossos produtos e acompanhar novidades
-            exclusivas. Utilize os botões abaixo para acessar as principais
-            funcionalidades: adicione novos itens ao nosso catálogo ou faça uma busca para
-            encontrar rapidamente aquilo que você precisa.
+            Bem-vindo ao gerenciador de estoque Eco+ ! <br />
+            Explore o site e descubra como é fácil gerenciar nossos produtos e
+            acompanhar novidades exclusivas. Utilize os botões abaixo para
+            acessar as principais funcionalidades: adicione novos itens ao nosso
+            catálogo ou faça uma busca para encontrar rapidamente aquilo que
+            você precisa.
           </h3>
 
           <div className={styles.btnRoutesHome}>
@@ -139,8 +138,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      {/* <Footer /> */}
-      <FooterMain/>
+      <FooterMain />
     </div>
   );
 }

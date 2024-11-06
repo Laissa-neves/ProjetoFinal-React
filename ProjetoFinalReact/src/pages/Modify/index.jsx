@@ -42,20 +42,20 @@ export default function Modify() {
     axios
       .put(`https://6722c0692108960b9cc578da.mockapi.io/produtos/${id}`, data)
       .then(() => {
-        console.log("Produto Atualizado!");
+        alert("Produto Atualizado!");
         navigate("/buscar");
       })
-      .catch(() => console.log("Erro na requisição"));
+      .catch(() => alert("Erro na requisição"));
   };
 
   const deletar = (id) => {
     axios
       .delete(`https://6722c0692108960b9cc578da.mockapi.io/produtos/${id}`)
       .then(() => {
-        console.log("Produto Deletado!");
+        alert("Produto Deletado!");
         navigate("/buscar");
       })
-      .catch(() => console.log("Erro na requisição"));
+      .catch(() => alert("Erro na requisição"));
   };
 
   return (

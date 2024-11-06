@@ -24,7 +24,7 @@ export default function Search() {
       .then((response) => {
         setProduto(response.data);
       })
-      .catch((error) => console.error("Erro ao buscar produtos:", error));
+      .catch((error) => alert("Erro ao buscar produtos:", error));
   };
 
   useEffect(() => {

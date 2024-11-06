@@ -6,14 +6,13 @@ export default function FooterSearch() {
 
   useEffect(() => {
     const handleScroll = () => {
-      
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
         setIsFooterVisible(true);
       } else {
         setIsFooterVisible(false);
       }
     };
- 
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -22,7 +21,11 @@ export default function FooterSearch() {
   }, []);
 
   return (
-    <footer className={`${styles.footerSearch} ${isFooterVisible ? styles.visible : styles.hidden}`}>
+    <footer
+      className={`${styles.footerSearch} ${
+        isFooterVisible ? styles.visible : styles.hidden
+      }`}
+    >
       <div className={styles.menu}>
         <span>Todos os direitos reservados</span> &copy; 2024{" "}
       </div>
